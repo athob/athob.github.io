@@ -1,4 +1,4 @@
-var slides = ['#Home', '#About','#CV','#Research','#Music','#Contact'];
+var slides = ['#Home', '#About','#CV','#Research','#Software','#Music','#Contact'];
 
 function init(e) {
     var in_tr_cats = document.getElementsByClassName("in_tr_cat");

@@ -193,6 +193,7 @@ article:nth-of-type(3){ left: 200vw }
 article:nth-of-type(4){ left: 300vw }
 article:nth-of-type(5){ left: 400vw }
 article:nth-of-type(6){ left: 500vw }
+article:nth-of-type(7){ left: 600vw }
 
 input[name="slider"][id="#Home"]:checked ~ section
 {
@@ -218,17 +219,23 @@ input[name="slider"][id="#Research"]:checked ~ section
     -ms-transform: translateX(-300vw);
     transform: translateX(-300vw);
 }
-input[name="slider"][id="#Music"]:checked ~ section
+input[name="slider"][id="#Software"]:checked ~ section
 {
     -webkit-transform: translateX(-400vw);
     -ms-transform: translateX(-400vw);
     transform: translateX(-400vw);
 }
-input[name="slider"][id="#Contact"]:checked ~ section
+input[name="slider"][id="#Music"]:checked ~ section
 {
     -webkit-transform: translateX(-500vw);
     -ms-transform: translateX(-500vw);
     transform: translateX(-500vw);
+}
+input[name="slider"][id="#Contact"]:checked ~ section
+{
+    -webkit-transform: translateX(-600vw);
+    -ms-transform: translateX(-600vw);
+    transform: translateX(-600vw);
 }
 
 article:nth-child(1){
@@ -253,10 +260,15 @@ article:nth-child(4){
 }
 article:nth-child(5){
     background: url('images/backgrounds/pupille.png') 50% 50% no-repeat,
-    url('images/backgrounds/backgroundmusic.jpg') 50% 50% no-repeat;
+    url('images/backgrounds/backgroundsoftware.jpg') 50% 50% no-repeat;
     background-size: 100% 100%, cover;
 }
 article:nth-child(6){
+    background: url('images/backgrounds/pupille.png') 50% 50% no-repeat,
+    url('images/backgrounds/backgroundmusic.jpg') 50% 50% no-repeat;
+    background-size: 100% 100%, cover;
+}
+article:nth-child(7){
     background: url('images/backgrounds/pupille.png') 50% 50% no-repeat,
     url('images/backgrounds/backgroundcontact.jpg') 50% 50% no-repeat;
     background-size: 100% 100%, cover;
@@ -351,6 +363,18 @@ article:nth-child(6) label:last-of-type
     display: inline-block;
     position: fixed;
     right: -500vw;
+}
+article:nth-child(7) label:first-of-type
+{
+    display: inline-block;
+    position: fixed;
+    left: 600vw;
+}
+article:nth-child(7) label:last-of-type
+{
+    display: inline-block;
+    position: fixed;
+    right: -600vw;
 }
 .tile
 {
